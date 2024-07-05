@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot IO</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div id="bots-container">
+        <div id="bot1" class="bot">
+          <img class="bot-image" src="./assets/meteo.jpg" alt="">
+          <p class="bot-name">MétéoBot</p>
+        </div>
+        <div id="bot2" class="bot">
+          <img class="bot-image" src="./assets/bot_musique.PNG" alt="">
+          <p class="bot-name">MusiqueBot</p>
+        </div>
+        <div id="bot3" class="bot">
+          <img class="bot-image" src="./assets/movieBot.jpg" alt="">
+          <p class="bot-name">MovieBot</p>
+        </div>
+        <div id="bot4" class="bot">
+          <img class="bot-image" src="./assets/help_bot.jpg" alt="">
+          <p class="bot-name">HelpBot</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div id="app">
+        <div id="message-container"></div>
+        <div id="input-container">
+          <div class="input-group">
+            <input type="text" id="message-input" placeholder="Veuillez entrer votre message...">
+            <button id="send-button">
+              <img id="btn-send" src="./assets/arrow_top.png" alt="">
+            </button>
+            <button id="clear-button">
+              <img id="btn" src="./assets/cross.png" alt="">
+            </button>
+            <button id="bots-button" data-bot="helpBot">
+              <img class="bot-image" id="btn" src="./assets/help_commands.png" alt="">
+            </button>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
